@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "products#top"
-
-  resources :products,only:[:index] do
+  # post 'products/create' => 'products#create'
+  resources :products,only:[:index,:new,:create] do
     collection do
       get 'top'
       get 'find_videos'
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
       get 'week_four'
       get 'month_one'
       get 'month_two'
+      get 'exchange'
     end
   end
 end

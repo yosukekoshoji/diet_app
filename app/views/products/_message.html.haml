@@ -1,0 +1,9 @@
+.show
+  = render 'show_logo'
+  .show__messages
+    -@posts.each do |post|
+      .show__messages__name
+        = post.user.nickname
+      .show__messages__message
+        = post.post
+    
