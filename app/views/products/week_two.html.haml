@@ -1,10 +1,10 @@
-.1week
+.week_one
   .text_box_1week 2週間目トレーニング
   = render 'header'
   .content_1week_main
     .content_1week_main
       .content_1week_main__readiness 
-        心構え
+        .content_1week_main__readiness__header 心構え
         %li.content_1week_main__readiness__text
           いつまでに、何のために痩せたいのか明確にしましょう！（私の場合は８月に格闘技を始めるために少し痩せたいでした）
         %li.content_1week_main__readiness__text 
@@ -16,17 +16,17 @@
         %li.content_1week_main__readiness__text
           トレーニングの意識は一週目とほとんど変わらず、気楽に！きつかったら緩めてOK！
       .content_1week_main__training
-        トレーニング内容
+        .content_1week_main__training__header トレーニング内容
         %li.content_1week_main__training__menu
           【４分間で確実に痩せる‼】痩せたい人だけ体幹サーキット ‼【プランクサーキット】
         %li.content_1week_main__training__menu
           【10分】世界一痩せるスクワット！
-        %li.content_1week_main__training__menu__new
+        %li.content_1week_main__training__menu-new
           【10分】パンチで脂肪を1kg落とす！全身の脂肪燃焼有酸素運動！　←New！！
-        %li.content_1week_main__training__menu__new
+        %li.content_1week_main__training__menu-new
           ５キロウォーキング（ゆっくりめ44分前後で歩いていました。）　←New！！
       .content_1week_main__meal
-        食事内容
+        .content_1week_main__meal__header 食事内容
         %li.content_1week_main__meal__menu
           【定番】鶏むね肉ボイル✕毎食ワンパック（飽きたので市販の棒々鶏のソースをかけて食べました）
         %li.content_1week_main__meal__menu
@@ -67,4 +67,4 @@
           ボクシングの動きです、追い込み過ぎなければ非常に楽しくトレーニングできるのでおすすめです。
         .content_1week_main__training__commentary__movie-comment
           くれぐれも頑張りすぎないを意識して行ってください。順番は順不同で大丈夫ですが、有酸素要素が大きいのでスクワットの後にやったほうがいいと思います。
-      =link_to "3週間目トレーニングへ移動する",week_three_products_path
+      =link_to "3週間目トレーニングへ移動する",week_three_products_path,class:"next-link"

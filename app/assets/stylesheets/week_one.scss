@@ -1,0 +1,127 @@
+.week_one{
+  background-color: #f5f5f5;
+  .text_box_1week{
+    font-size:40px;
+    text-align:center;
+  }
+  .content_1week_main{
+    background-color: #fff;
+    margin: auto;
+    width:700px;
+    padding-bottom:20px;
+    &__readiness{
+      
+      &__header{
+        text-align:center;
+        font-size:30px;
+        background-color:skyblue;
+      }
+      &__text{
+        font-size: 15px;
+        padding-left:20px;
+      }
+    }
+    &__training{
+      &__header{
+        text-align:center;
+        font-size:30px;
+        background-color:skyblue;
+        &__mini{
+          background-color: #fff;
+        }
+      }
+      &__menu{
+        padding: 10px 0 10px 20px;
+        margin-top:10px;
+        background-color:#fde09d;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      &__menu-new{
+        padding: 10px 0 10px 20px;
+        margin-top:10px;
+        background-color:pink;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    &__readiness{
+      &__header{
+        text-align:center;
+        font-size:30px;
+        background-color:skyblue;
+        margin-top:10px;
+      }
+      &__menu{
+        padding-left:10px;
+        padding-right: 10px;
+      }
+    }
+    &__foodmenu{
+      &__header{
+        text-align:center;
+        font-size:30px;
+        background-color:skyblue;
+        margin-top:10px;
+      }
+    }
+    &__meal{
+      &__header{
+        text-align:center;
+        font-size:30px;
+        background-color:skyblue;
+        margin-top:10px;
+      }
+      &__menu{
+        padding: 10px 0 10px 20px;
+        margin-top:10px;
+        background-color:#fde09d;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      &__menu-new{
+        padding: 10px 0 10px 20px;
+        margin-top:10px;
+        background-color:pink;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      &__menu-cheat{
+        padding: 10px 0 10px 20px;
+        margin-top:10px;
+        background-color:pink;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    &__training{
+      align-items: center;
+      &__commentary{
+        &__header{
+          text-align:center;
+          font-size:30px;
+          background-color:skyblue;
+          margin-top:10px;
+        }
+        &__movie{
+          align-items: center;
+          padding-top:10px;
+        }
+      }
+      
+    }
+    &__cheat{
+      margin-top: 10px;
+      &__header{
+
+        text-align:center;
+        font-size:30px;
+        background-color:yellow;
+      }
+    }
+    .next-link{
+      padding-top:10px;
+      
+    }
+  }
+}

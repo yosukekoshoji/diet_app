@@ -1,10 +1,10 @@
-.1week
-  .text_box_1week 1ヶ月目トレーニング
+.week_one
+  .text_box_1week 2ヶ月目トレーニング
   = render 'header'
   .content_1week_main
     .content_1week_main
       .content_1week_main__readiness 
-        心構え
+        .content_1week_main__readiness__header 心構え
         %li.content_1week_main__readiness__text
           いつまでに、何のために痩せたいのか明確にしましょう！（私の場合は８月に格闘技を始めるために少し痩せたいでした）
         %li.content_1week_main__readiness__text 
@@ -13,7 +13,9 @@
           食事は消費カロリー＞摂取カロリーが基本です。
         
       .content_1week_main__training
-        トレーニング内容【この中の３つくらいをセレクトしてやっていくと良いです。できない日はストレッチだけでもやってみてください】
+        .content_1week_main__training__header トレーニング内容
+        .content_1week_main__training__header__point
+          【この中の３つくらいをセレクトしてやっていくと良いです。できない日はストレッチだけでもやってみてください】
         %li.content_1week_main__training__menu
           【４分間で確実に痩せる‼】痩せたい人だけ体幹サーキット ‼【プランクサーキット】
         %li.content_1week_main__training__menu
@@ -28,14 +30,14 @@
           胸を大きくする３分間６種類の最強自重胸トレメニュー！【効かない訳が無いトレ】大胸筋トレーニング 筋トレ
         %li.content_1week_main__training__menu
           ５キロウォーキング（速歩き　33分前後で歩いていました。）
-        %li.content_1week_main__training__menu__new
+        %li.content_1week_main__training__menu-new
           【体幹！腸腰筋！逆腹筋サーキット‼】逆腹筋を取り入れた簡単激やせサーキット‼【４分間‼】【無駄な筋肉付けません!!】　　←New ！！
-        %li.content_1week_main__training__menu__new
+        %li.content_1week_main__training__menu-new
           成人からの！体が柔らかくなる軟体ストレッチ法を紹介【日々筋トレ漬け体ガチガチにも必見】　　←New ！！
-        %li.content_1week_main__training__menu__new
+        %li.content_1week_main__training__menu-new
           開脚できるようになるストレッチ！【2週間で開脚ベターっになる方法】　←New ！！
       .content_1week_main__meal
-        食事内容
+        .content_1week_main__meal__header 食事内容
         %li.content_1week_main__meal__menu
           味噌汁＋納豆（毎食）
         %li.content_1week_main__meal__menu
@@ -47,7 +49,7 @@
         %li.content_1week_main__meal__menu
           居酒屋　週３回ペース
       .content_1week_main__readiness__success
-        反省点や振り返り（一ヶ月の振り返り）
+        .content_1week_main__readiness__header反省点や振り返り（一ヶ月の振り返り）
         .content_1week_main__readiness__success__menu
           この月はプライベートで色々あって、色んな人に居酒屋で慰めてもらっていました　笑
         .content_1week_main__readiness__success__menu
@@ -71,7 +73,7 @@
         .content_1week_main__readiness__success__menu
           この段階で71kg→63kgになりー８キロのダイエットに成功しました！
       .content_1week_main__training__commentary
-        トレーニング動画紹介【追加あり】
+        .content_1week_main__training__commentary__header トレーニング動画紹介【追加あり】
         .content_1week_main__training__commentary__movie 
           %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/19ZBZPT1CnA", :width => "560"}
         .content_1week_main__training__commentary__movie-comment
@@ -115,5 +117,5 @@
         .content_1week_main__training__commentary__movie
           %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/Re5FPU5_37g", :width => "560"}
         .content_1week_main__training__commentary__movie-comment
-          こちらの動画は、メトロンさんのものより優しい内容となっています。ぜひこちらも試してみてください。メトロンさんの動画出てきた呼吸法をつかって置こうとなお良いです
-      =link_to "トレーニングルームに戻る",products_path
+          こちらの動画は、メトロンさんのものより優しい内容となっています。ぜひこちらも試してみてください。メトロンさんの動画出てきた呼吸法をつかって行うとなお良いです
+      =link_to "トレーニングルームに戻る",products_path,class:"next-link"

@@ -1,16 +1,17 @@
 .index_main
   .top_title トレーニングROOM
   =render 'header'
-  .note　ご自身のトレーニング期間に応じてリンク先に飛んでください。次に移るのが厳しいなと思うときは慣れるまでそのメニューで大丈夫です。
-  .1week 
-    = link_to "1週間目のトレーニングメニューへ",week_one_products_path
-  .2week
-    = link_to "2週間目のトレーニングメニューへ",week_two_products_path
-  .3week
-    = link_to "3週間目のトレーニングメニューへ",week_three_products_path
-  .4week
-    = link_to "4週間目のトレーニングメニューへ",week_four_products_path
-  .1month
-    = link_to "1ヶ月目〜のトレーニングメニューへ",month_one_products_path
-  .2month
-    = link_to "2ヶ月目〜のトレーニングメニューへ",month_two_products_path
+  .link_pagebox
+    .note　ご自身のトレーニング期間に応じてリンク先に飛んでください。次に移るのが厳しいなと思うときは慣れるまでそのメニューで大丈夫です。
+    .week_one 
+      = link_to "1週間目のトレーニングメニューへ",week_one_products_path,class:'week_one__link'
+    .week_two
+      = link_to "2週間目のトレーニングメニューへ",week_two_products_path,class:'week_two__link'
+    .week_three
+      = link_to "3週間目のトレーニングメニューへ",week_three_products_path,class:'week_three__link'
+    .week_four
+      = link_to "4週間目のトレーニングメニューへ",week_four_products_path,class:'week_four__link'
+    .month_one
+      = link_to "1ヶ月目〜のトレーニングメニューへ",month_one_products_path,class:'month_one__link'
+    .month_two
+      = link_to "2ヶ月目〜のトレーニングメニューへ",month_two_products_path,class:'month_two__link'

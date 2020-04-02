@@ -6,7 +6,7 @@
       =link_to "トレーニングRoom",products_path,class:'training_tab'
     - if user_signed_in?
       .link_tabs__box__exchange
-        =link_to "情報交換ページへ",exchange_products_path,class:'exchange_tab'
+        =link_to "情報交換ページへ",new_product_path,class:'exchange_tab'
       .link_tabs__box__logout
         =link_to "ログアウト",destroy_user_session_path, class:'logout_tab',method: :delete
     - else

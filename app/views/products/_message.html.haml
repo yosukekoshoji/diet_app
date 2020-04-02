@@ -1,9 +1,15 @@
 .show
-  = render 'show_logo'
+  .show__toplogo 情報交換ROOM
+  = render 'header'
   .show__messages
     -@posts.each do |post|
-      .show__messages__name
-        = post.user.nickname
+      .show__messages__namebox
+        .show__messages__namebox__number
+          = post.id
+        .show__messages__namebox__name
+          ="#{post.user.nickname}："
+        .show__messages__namebox__time
+          = post.created_at
       .show__messages__message
         = post.post
     

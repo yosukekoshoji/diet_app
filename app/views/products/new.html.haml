@@ -3,9 +3,6 @@
   .footer
     .footer__comment_box
       = form_with model: Post.new,url: products_path,local: true do |form|
-        .footer__comment_box__text
-          = form.text_area :post,placeholder:"例)1週間目です。徐々に筋トレになれてきました。"
-        .footer__comment_box__btn
-          = form.submit"投稿する"
-
-  =link_to 'トップ（仮）',root_path
+        = form.text_area :post,placeholder:"例)1週間目です。徐々に筋トレになれてきました。",class:"footer__comment_box__text"
+        
+        = form.submit"投稿する",class:"footer__comment_box__btn"
