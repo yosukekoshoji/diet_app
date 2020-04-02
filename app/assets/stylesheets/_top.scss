@@ -10,30 +10,37 @@
     text-align: center;
     line-height:100px;
   }
-  .introduction1{
-    font-size:20px;
-    font-weight:bold;
-    border:1px solid black;
-    padding-left:20px;
-  }
-  .introduction1__main{
-    line-height:30px;
-    padding-left: 10px;
-  }
-  .title__link{
-    align-items: center;
-    padding-left:20px;
-    padding-top:40px;
-    .link_top{
+  .content{
+    padding-top:10px;
+    width:800px;
+    margin: auto;
+    .introduction1{
+      width:900px;
+      margin: auto;
+      font-size:20px;
+      font-weight:bold;
+      border:1px solid black;
+      padding-left:20px;
+    }
+    .introduction1__main{
+      line-height:30px;
+      padding-left: 10px;
+    }
+    .title__link{
       align-items: center;
-      background-color:yellow;
-      color: black;
-      width:100%;
-      height:200px;
-      padding:10px;
-      margin-left:10px;
-      align-items: center;
-      
+      padding-left:20px;
+      padding-top:40px;
+      .link_top{
+        align-items: center;
+        background-color:yellow;
+        color: black;
+        width:100%;
+        height:200px;
+        padding:10px;
+        margin-left:10px;
+        align-items: center;
+        
+      }
     }
   }
 }

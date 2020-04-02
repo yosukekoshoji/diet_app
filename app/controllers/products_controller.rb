@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:post).merge(user_id: current_user.id)
+    params.require(:post).permit(:post,:image).merge(user_id: current_user.id)
   end
   
 end

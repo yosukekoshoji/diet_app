@@ -12,4 +12,7 @@
           = post.created_at
       .show__messages__message
         = post.post
+      .show__messages__image
+        - if post.image?
+          = image_tag post.image.url, :size =>'410x300'
     
