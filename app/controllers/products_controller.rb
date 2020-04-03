@@ -17,8 +17,14 @@ class ProductsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
-    redirect_to new_product_path
+    @post = Post.create(post_params)
+
+    if @post.save
+      respond_to do |format|
+        format.html {redirect_to new_product_path, notice: 'メッセージが送信されました'}
+        format.json
+      end
+    end
   end
 
   private

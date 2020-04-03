@@ -1,8 +1,10 @@
 .new_main
   = render 'message'
+  - if flash[:notice]
+    %p= flash[:notice]
   .footer
     .footer__comment_box
-      = form_with model: Post.new,url: products_path,local: true do |form|
+      = form_with model: Post.new, id: 'new_form',url: products_path,local: true do |form|
         = form.text_area :post,placeholder:"例)1週間目です。徐々に筋トレになれてきました。",class:"footer__comment_box__text"
         = form.file_field :image
         = form.submit"投稿する",class:"footer__comment_box__btn"
