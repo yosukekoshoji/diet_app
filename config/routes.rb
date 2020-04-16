@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root "products#top"
-  # post 'products/create' => 'products#create'
-  resources :products,only:[:index,:new,:create] do
+  
+  resources :products,except: :show do
     collection do
       get 'top'
       get 'find_videos'
@@ -13,6 +13,9 @@ Rails.application.routes.draw do
       get 'month_one'
       get 'month_two'
       get 'exchange'
+    end
+  namespace :api do
+    resources :products, only: :new, defaults: { format: 'json' }
     end
   end
 end

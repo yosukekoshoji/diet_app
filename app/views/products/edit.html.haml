@@ -1,0 +1,6 @@
+.edit
+  投稿の編集
+  .show__messages__namebox
+    = form_with model: @post, id: 'edit_form',url: product_path,local: true do |form|
+      = form.text_area :post,class:"footer__comment_box__text"
+      = form.submit"変更する",class:"footer__comment_box__btn"

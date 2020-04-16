@@ -1,18 +1,29 @@
 .show
-  .show__toplogo 情報交換ROOM
-  = render 'header'
   .show__messages
     -@posts.each do |post|
-      .show__messages__namebox
+      .show__messages__namebox{"data-post-id": "#{post.id}"}
         .show__messages__namebox__number
           = post.id
         .show__messages__namebox__name
           ="#{post.user.nickname}："
         .show__messages__namebox__time
           = post.created_at
+        
+
+        - if user_signed_in? && current_user.id == post.user_id
+          %span.js-edit-comment-button{"data-comment-id": "#{post.id}"}  
+            %i.fas.fa-edit.text-primary
+          =link_to "削除する", product_path(post.id),method: :delete, class: "postManage__delete"
       .show__messages__message
         = post.post
+      %div{id: "js-comment-#{post.id}"}
+        %p{id: "js-comment-label-#{post.id},post.body"}
+        %p.text-danger{id: "js-comment-post-error-#{post.id}"}
+        %textarea{class:"form-control.comment-post-error-post.body",id: "js-textarea-comment-#{post.id}", style: "display: none;"}
+      %div{id:"js-comment-button-#{post.id}",style: "display: none;"}
+        %button.btn.btn-light.comment-cancel-button{"data-cancel-id": "#{post.id}"}キャンセル
+        %button.btn.btn-right.comment-update-button{"data-update-id": "#{post.id}"}更新する
+
       .show__messages__image
         - if post.image?
           = image_tag post.image.url, :size =>'410x300'
-    

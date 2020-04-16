@@ -1,7 +1,7 @@
 .new_main
+  .show__toplogo 情報交換ROOM
+  = render 'header'
   = render 'message'
-  - if flash[:notice]
-    %p= flash[:notice]
   .footer
     .footer__comment_box
       = form_with model: Post.new, id: 'new_form',url: products_path,local: true do |form|
