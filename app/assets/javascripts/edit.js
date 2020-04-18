@@ -10,7 +10,6 @@ $(function () {
     const commentLabelArea = $('#js-comment-label-' + commentId);  
     const commentTextArea = $('#js-textarea-comment-' + commentId);
     const commentButton = $('#js-comment-button-' + commentId);     
-
     commentLabelArea.hide(); 
     commentTextArea.show();  
     commentButton.show();    
@@ -40,7 +39,8 @@ $(function () {
                     
     $.ajax({                        
       url: '/products/' + commentId, 
-      type: 'PATCH',                 
+      type: 'PATCH',
+      dataType: 'json',             
       data: {                        
         post: {
           post: body
@@ -49,17 +49,20 @@ $(function () {
       }
     })
     .done(function (data) { 
-      // debugger;
+      // debugger
       const commentLabelArea = $('#js-comment-label-' + commentId);
       const commentTextArea = $('#js-textarea-comment-' + commentId);
       const commentButton = $('#js-comment-button-' + commentId);
       const commentError = $('#js-comment-post-error-' + commentId); 
 
       commentLabelArea.show();
-      commentLabelArea.text(data.post); 
+      commentLabelArea.text(data.body); 
       commentTextArea.hide();
       commentButton.hide();
       commentError.hide();
+      // debugger;
+      console.log(data)
+      $('html, body').animate({ scrollTop: 50000000000});
     })
     .fail(function () {
       const commentError = $('#js-comment-post-error-' + commentId); 

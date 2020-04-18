@@ -7,18 +7,51 @@
     text-align: center;
   }
   &__messages{
-    &__namebox{
-      display: flex;
-      &__name{
-        padding-right:20px;
-      }
-      &__number{
-        padding:0 20px;
-      }
-    }
     &__message{
-      padding-left: 20px;
-      margin: 5px 0 20px 0;
+      width: 100%;
+      height: 100%;
+      &__namebox{
+        display: flex;
+        &__name{
+          padding-right:20px;
+        }
+        &__number{
+          padding:0 20px;
+        }
+      }
+      &--comment{
+        padding-left: 20px;
+        margin: 5px 0 20px 0;
+      }
+      &__editbox{
+        width: 100%;
+        height: 100%;
+        padding-left:20px;
+      }
+      .edit__btnbox{
+        padding-left:20px;
+        
+      }
     }
+    
   }
+}
+.btn{
+  height:30px;
+  font-size:15px;
+}
+.comment-update-button{
+  background-color:blue;
+  color:white;
+}
+.comment-post-error-post.body{
+  height:50px;
+  width: 300px;
+}
+.js-edit-comment-button{
+  padding-left:30px;
+  padding-right:20px;
+}
+.fas.fa-edit.text-primary{
+  color: blue;
 }
