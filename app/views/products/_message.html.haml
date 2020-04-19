@@ -16,7 +16,7 @@
               %i.fas.fa-edit.text-primary
             =link_to  product_path(post.id),method: :delete do
               %i.fas.fa-trash-alt
-        .show__messages__message--comment
+        .show__messages__message--comment{id:"hogehoge-#{post.id}"}
           = post.post
         %div{class: "show__messages__message__editbox",id: "js-comment-#{post.id}"}
           %p{id: "js-comment-label-#{post.id},post.body"}

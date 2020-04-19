@@ -40,7 +40,8 @@ $(function () {
     $.ajax({                        
       url: '/products/' + commentId, 
       type: 'PATCH',
-      dataType: 'json',             
+      dataType: 'json',
+             
       data: {                        
         post: {
           post: body
@@ -49,19 +50,20 @@ $(function () {
       }
     })
     .done(function (data) { 
-      // debugger
+
       const commentLabelArea = $('#js-comment-label-' + commentId);
       const commentTextArea = $('#js-textarea-comment-' + commentId);
       const commentButton = $('#js-comment-button-' + commentId);
       const commentError = $('#js-comment-post-error-' + commentId); 
+      const commentHogehoge = $('#hogehoge-' + commentId);
 
       commentLabelArea.show();
-      commentLabelArea.text(data.body); 
+      commentLabelArea.text(data.post); 
       commentTextArea.hide();
       commentButton.hide();
       commentError.hide();
-      // debugger;
-      console.log(data)
+      commentHogehoge.text(data.post);
+
       $('html, body').animate({ scrollTop: 50000000000});
     })
     .fail(function () {
