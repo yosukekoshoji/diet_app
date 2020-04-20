@@ -3,12 +3,16 @@ Name
 ====
 
 ## 📗 開発環境
-**強調** Ruby on Rails
-Jquery 
-VSCode（Visual Studio Code）
+- Ruby 2.5.1
+- Ruby on Rails　5.2.4.2
+- Jquery 
+- MySQL 5.6.43
+- VSCode（Visual Studio Code）
 
 ## 📗 アプリ機能
-1、ユーザーの登録
+1、ユーザー登録/ログイン/ログアウト機能
+![ログイン](images/ログイン.png)
+![新規登録](images/新規登録.png)
 
 
 ## Demo
