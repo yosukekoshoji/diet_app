@@ -9,6 +9,10 @@
     margin: auto;
     width:700px;
     padding-bottom:20px;
+    &__cheat__day{
+      padding-left: 10px;
+      padding-bottom:5px;
+    }
     &__readiness{
       
       &__header{
@@ -22,6 +26,13 @@
       }
     }
     &__training{
+      &__commentary{
+        
+        &__movie-comment{
+          padding-left:10px;
+          padding-bottom:5px;
+        }
+      }
       &__header{
         text-align:center;
         font-size:30px;

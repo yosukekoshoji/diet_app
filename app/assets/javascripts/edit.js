@@ -40,8 +40,6 @@ $(function () {
     $.ajax({                        
       url: '/products/' + commentId, 
       type: 'PATCH',
-      dataType: 'json',
-             
       data: {                        
         post: {
           post: body

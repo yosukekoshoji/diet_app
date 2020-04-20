@@ -1,24 +1,30 @@
-# README
+Name
+3ヶ月で8キロ痩せるダイエットアプリ
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+📗 開発環境
+Ruby on Rails
+Jquery 
+VSCode（Visual Studio Code）
 
-Things you may want to cover:
+📗 アプリ機能
+1、ユーザーの登録
 
-* Ruby version
+## Demo
 
-* System dependencies
 
-* Configuration
+## Requirement
 
-* Database creation
+## Usage
 
-* Database initialization
+## Install
 
-* How to run the test suite
+## Contribution
 
-* Services (job queues, cache servers, search engines, etc.)
+## Licence
 
-* Deployment instructions
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
 
-* ...
+## Author
+
+[tcnksm](https://github.com/tcnksm)

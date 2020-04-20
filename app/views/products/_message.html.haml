@@ -3,7 +3,7 @@
     .show__messages__message
       -@posts.each do |post|
         .show__messages__message__namebox{"data-post-id": "#{post.id}"}
-          .show__messages__message__namebox__number
+          .show__messages__message__namebox__number{id:"jsCommentLabel-#{post.id}"}
             = post.id
           .show__messages__message__namebox__name
             ="#{post.user.nickname}："
