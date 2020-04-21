@@ -1,4 +1,8 @@
-
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="token"]').attr('content')
+  }
+});
 
 $(function () {
   $(document).on("click", ".js-edit-comment-button", function () {           
