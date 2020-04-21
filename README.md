@@ -15,15 +15,15 @@
 ![ログイン](https://i.imgur.com/5Cvy5Hu.png "login")
 2.コメント投稿機能
 非同期通信にてコメント投稿（ユーザー同士の情報交換）が可能です。
-![投稿](https://i.imgur.com/iFDgwri.mp4"post")
+![投稿](https://i.imgur.com/iFDgwri"post")
 
 3.コメント編集/削除機能
 非同期通信にて編集が出来ます。
-![編集](https://i.imgur.com/xwIMbSU.mp4"edit")
+![編集](https://i.imgur.com/xwIMbSU"edit")
 
-コメントを削除出来ます。
-![削除](https://i.imgur.com/Xc8dAwv.mp4"delete")
+3-1.コメントを削除出来ます。
+![削除](https://i.imgur.com/Xc8dAwv"delete")
 
 4.ページを閲覧しながらダイエットの手法を学べます。
 
-![ページ](https://i.imgur.com/7idyqYb.mp4"app")
+![ページ](https://imgur.com/7idyqYb"app")
