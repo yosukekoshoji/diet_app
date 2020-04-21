@@ -7,28 +7,17 @@ class ProductsController < ApplicationController
   end
 
   def exchange
-    # @user = User.all
     @posts = Post.includes(:user).order("created_at ASC")
   end
 
   def new
     @post = Post.new
     @posts = Post.includes(:user).order("created_at ASC")
-
   end
 
   def create
     @post = Post.create(post_params)
-
-    if @post.save
-      respond_to do |format|
-        format.html {redirect_to new_product_path, notice: 'メッセージが送信されました'}
-        format.json　
-    end
-    else
-      flash.now[:alert] = 'メッセージを入力してください'
-      render :new
-    end
+    @post.save
   end
 
   def edit
@@ -38,11 +27,15 @@ class ProductsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
+    respond_to do |format|
+    format.json{
     if @post.update!(post_params)
        render json: @post
     else
       head :bad_request
     end
+    }
+  end
   end
 
   def destroy
