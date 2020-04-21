@@ -12,7 +12,7 @@
 ## 📗 アプリ機能
 1.ユーザー登録/ログイン/ログアウト機能
 ![新規登録](https://i.imgur.com/GO3sAon.png "singin")
-![ログイン](images/ログイン.png "login")
+![ログイン](https://i.imgur.com/5Cvy5Hu.png "login")
 2.コメント投稿機能
 非同期通信にてコメント投稿（ユーザー同士の情報交換）が可能です。
 
