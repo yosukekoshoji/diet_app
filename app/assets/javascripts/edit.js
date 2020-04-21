@@ -61,8 +61,6 @@ $(function () {
       commentButton.hide();
       commentError.hide();
       commentHogehoge.text(data.post);
-
-      $('html, body').animate({ scrollTop: 50000000000});
     })
     .fail(function () {
       const commentError = $('#js-comment-post-error-' + commentId); 
