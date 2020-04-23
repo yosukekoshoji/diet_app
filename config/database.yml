@@ -52,3 +52,4 @@ production:
   database: diet_app_production
   username: diet_app
   password: <%= ENV['DIET_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
