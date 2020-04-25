@@ -6,7 +6,7 @@ $(function(){
       <div class="show__messages__message__namebox" >
         <div class="show__messages__message__namebox" data-post-id=${post.id}>
           <div class="show__messages__message__namebox__number">
-            ${post.id}
+            ${post.id} - 9
           </div>
           <div class="show__messages__message__namebox__name">
             ${post.nickname}
