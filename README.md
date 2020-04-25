@@ -35,6 +35,29 @@
 
 ![ページ紹介](https://user-images.githubusercontent.com/58423182/79851182-ed56a880-83ff-11ea-85fe-81e72e77de81.gif)
 
+## Userテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+
+###Association
+- has_many :posts
+
+## Postテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|post|text|------|
+|image|string|------|
+|user_id|integer|null: false|
+
+###Association
+- belongs_to :user
+
 ## 📗 今後追加したい機能
 - ログインスタンプ機能
 - トレーニング日誌ページの追加
+- 自動更新機能
