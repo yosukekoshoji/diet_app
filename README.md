@@ -3,9 +3,9 @@
 ====
 
 ## 📗 ログイン情報
-URL: https://koshodietapp.herokuapp.com/
-Email: hogehoge@gmail.com
-password: hogehoge
+- URL: https://koshodietapp.herokuapp.com/
+- Email: hogehoge@gmail.com
+- password: hogehoge
 
 ## 📗 開発環境
 - Ruby 2.5.1
@@ -38,4 +38,3 @@ password: hogehoge
 ## 📗 今後追加したい機能
 - ログインスタンプ機能
 - トレーニング日誌ページの追加
-- 
