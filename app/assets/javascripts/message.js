@@ -95,7 +95,6 @@ $(function(){
       $('.footer__comment_box__text').val('') 
       $('.footer__comment_box__btn').prop('disabled',false);
       $('form')[0].reset();
-      console.log(data)
     })
     .fail(function(){
       alert('投稿できませんでした')
