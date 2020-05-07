@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root "products#top"
   
   resources :products,except: :show do
-    collection do
+    
+    
       get 'top'
       get 'find_videos'
       get 'week_one'
